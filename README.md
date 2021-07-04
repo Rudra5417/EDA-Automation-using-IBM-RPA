@@ -12,3 +12,6 @@ Requirements:
 2) DataCleaner
 -> pip install datacleaner
 3) IBM RPA Studio
+
+NOTE:
+Data Cleaning process used here might not be accurate.The Main purpose is to automate the process of Data analysis and Data cleaning with the help of IBM RPA studio.There are various auto cleaning libraries which are effective and can be used.
