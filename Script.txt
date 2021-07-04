@@ -1,0 +1,20 @@
+defVar --name vscode --type Window
+defVar --name busywindow --type Boolean
+defVar --name cmd --type Window
+launchWindow --executablepath "C:\\WINDOWS\\system32\\cmd.exe" --timeout "00:00:05" cmd=value
+typeText --text conda
+delay --timeout "00:00:03"
+keyboard --type "KeyPress" --key "Execute"
+delay --timeout "00:00:03"
+typeText --text "activate tensorflow"
+keyboard --type "KeyPress" --key "Execute"
+delay --timeout "00:00:03"
+typeText --text spyder
+keyboard --type "KeyPress" --key "Execute"
+delay --timeout "00:00:15"
+keyboard --type "KeyPress" --key "F5"
+delay --timeout "00:00:25"
+launchWindow --executablepath "C:\\Users\\Rudra Patel\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe" vscode=value
+focusWindow --window ${vscode}
+keyboard --type "KeyPress" --key "LControlKey"
+keyboard --type "KeyPress" --key "F5"
